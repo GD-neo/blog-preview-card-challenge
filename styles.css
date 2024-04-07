@@ -1,0 +1,323 @@
+/* set up root so I dont have to look up the hsl values every time I want to use the colors */
+:root {
+    --primary-yellow: hsl(47, 88%, 63%);
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-grey: hsl(0, 0%, 50%);
+    --neutral-black: hsl(0, 0%, 7%);
+
+}
+
+body { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main { 
+    background-color: var(--primary-yellow);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card { 
+    height: 475px;
+    width: 337px;
+    border: 1px solid var(--neutral-black);
+    border-radius: 20px;
+    background-color: var(--neutral-white);
+    box-shadow: 7px 7px 0px 1px var(--neutral-black);
+    padding: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.image { 
+    width: 100%;
+    height: auto;
+    /* max-height: 210px; */
+    border-radius: 12px;
+    /* margin: 5px; */
+}
+
+.tag { 
+    background-color: var(--primary-yellow);
+    padding: 5px 12px;
+    border-radius: 5px;
+    margin-top: 24px;
+}
+
+
+p, h1, h2, h3, h4, h5, h6 { 
+    font-family: Figtree, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1{
+    font-weight: 800;
+    font-size: 24px;
+    margin-top: 19px;
+    letter-spacing: 0.5px;
+    /* color: var(--neutral-black); */
+}
+a {
+    text-decoration: none;
+    color: var(--neutral-black);
+}
+a:hover, a:active{
+    color: var(--primary-yellow);
+}
+
+p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.date { 
+    margin-top: 13px;
+    font-size: 13px;
+}
+
+.about {
+    color: var(--neutral-grey);
+    margin-top: 19px;
+    letter-spacing: 0.2px;
+    line-height: 1.4;
+}
+
+.author {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 800;
+    margin-top: 23px;
+}
+
+.author img {
+    height: 33px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.author p {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+footer { 
+    background-color: var(--primary-yellow);
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--neutral-grey);
+
+}
+footer a { 
+    color: var(--neutral-grey);
+}
+/* Breakpoint for smaller screens - for mobile  */
+ @media (max-width: 500px){
+    .card { 
+        height: 458px;
+        width: 286px;
+        border: 1px solid var(--neutral-black);
+        border-radius: 20px;
+        background-color: var(--neutral-white);
+        box-shadow: 7px 7px 0px 1px var(--neutral-black);
+        padding: 20px;
+        /* padding-top: 22px; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+    .pos-image { 
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        border-radius: 13px;
+    }
+    
+    .image { 
+        /* height: 330px; */
+        width: 120%;
+        margin: 0px 0px 0px 0px;
+        /* max-height: 210px; */
+        /* border-radius: 12px; */
+        /* margin: 5px; */
+        /* overflow: hidden; */
+        /* clip-path: inset(0px 0px 0px 30px round 12px); */
+        position: relative;
+        top: 0px;
+        left: -27px;
+    }
+    
+    .tag { 
+        background-color: var(--primary-yellow);
+        padding: 5px 12px;
+        border-radius: 5px;
+        margin-top: 19px;
+    }
+
+    .tag p {
+        font-size: 13px;
+
+    }
+
+    h1{
+        font-weight: 800;
+        font-size: 20px;
+        margin-top: 19px;
+        letter-spacing: 0.5px;
+        /* color: var(--neutral-black); */
+    }
+    a {
+        text-decoration: none;
+        color: var(--neutral-black);
+    }
+    a:hover, a:active{
+        color: var(--primary-yellow);
+    }
+    
+    p{
+        font-size: 14px;
+    }
+    
+    .date { 
+        margin-top: 13px;
+        font-size: 12px;
+    }
+    
+    .about {
+        color: var(--neutral-grey);
+        margin-top: 19px;
+        letter-spacing: 0.1px;
+        line-height: 1.4;
+    }
+    
+    .author {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-weight: 800;
+        margin-top: 23px;
+    }
+    
+    .author img {
+        height: 33px;
+        width: auto;
+        margin-right: 10px;
+    }
+    
+    .author p {
+        font-size: 15px;
+    }
+ }
+
+ /* Breakpoint for smaller screens - for mobile  */
+ @media (max-width: 365px){
+    .card { 
+        height: 320px;
+        width: 200px;
+        border: 1px solid var(--neutral-black);
+        border-radius: 20px;
+        background-color: var(--neutral-white);
+        box-shadow: 7px 7px 0px 1px var(--neutral-black);
+        padding: 20px;
+        /* padding-top: 22px; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+    .pos-image { 
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        border-radius: 13px;
+    }
+    
+    .image { 
+        /* height: 330px; */
+        width: 120%;
+        margin: 0px 0px 0px 0px;
+        /* max-height: 210px; */
+        /* border-radius: 12px; */
+        /* margin: 5px; */
+        /* overflow: hidden; */
+        /* clip-path: inset(0px 0px 0px 30px round 12px); */
+        position: relative;
+        top: 0px;
+        left: -27px;
+    }
+    
+    .tag { 
+        background-color: var(--primary-yellow);
+        padding: 2px 5px;
+        border-radius: 2px;
+        margin-top: 10px;
+    }
+
+    .tag p {
+        font-size: 10px;
+
+    }
+
+    h1{
+        font-weight: 800;
+        font-size: 15px;
+        margin-top: 15px;
+        letter-spacing: 0.2px;
+        /* color: var(--neutral-black); */
+    }
+    a {
+        text-decoration: none;
+        color: var(--neutral-black);
+    }
+    a:hover, a:active{
+        color: var(--primary-yellow);
+    }
+    
+    p{
+        font-size: 11px;
+    }
+    
+    .date { 
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    
+    .about {
+        color: var(--neutral-grey);
+        margin-top: 10px;
+        letter-spacing: 0.1px;
+        line-height: 1.4;
+    }
+    
+    .author {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-weight: 800;
+        margin-top: 16px;
+    }
+    
+    .author img {
+        height: 25px;
+        width: auto;
+        margin-right: 10px;
+    }
+    
+    .author p {
+        font-size: 11px;
+    }
+ }
